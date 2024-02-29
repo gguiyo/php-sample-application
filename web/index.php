@@ -1,4 +1,5 @@
 <?php
+require __DIR__ . '/../autoloader.php';
 
 $lastJoinedUsers = (require "dic/users.php")->getLastJoined();
 
