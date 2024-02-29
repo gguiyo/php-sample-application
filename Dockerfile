@@ -3,9 +3,8 @@ FROM php:7.4-apache
 # Instalar las extensiones de PHP necesarias
 RUN docker-php-ext-install pdo_mysql
 
-# Instalar wget y unzip (necesarios para la instalación de Composer)
+# Instalar wget y unzip
 RUN apt-get update && apt-get install -y wget unzip
-
 
 # Copiar los archivos de la aplicación al contenedor
 COPY . /var/www/html
